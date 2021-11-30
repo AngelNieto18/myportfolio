@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header";
+}
+
+@import './components/navbar';
+@import './components/header';
+@import './components/medias';
