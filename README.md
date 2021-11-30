@@ -1,2 +1,1 @@
-# myportfolio
-angel's web dev portfolio
+# Portafolio personal de desarrollo web
