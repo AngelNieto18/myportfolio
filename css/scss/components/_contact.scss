@@ -1,0 +1,48 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $primary-color;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    grid-area: contact;
+
+    h1 {
+        margin: 20px 0 0 0;
+    }
+
+    .container {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+
+        a {
+            text-align: center;
+
+            &:nth-child(2) {
+                margin: 0 300px;
+            }
+
+            img {
+                width: 3%;
+                filter: invert(98%) sepia(55%) saturate(207%) hue-rotate(200deg) brightness(118%) contrast(100%);
+            }
+        }
+
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            margin-left: 5px;
+            width: 9%;
+            filter: invert(98%) sepia(55%) saturate(207%) hue-rotate(200deg) brightness(118%) contrast(100%);
+
+        }
+    }
+}

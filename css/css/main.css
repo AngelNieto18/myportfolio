@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  display: grid;
+  grid-template-areas: "nav nav nav" "header header header" "skills skills skills" "projects projects projects" "contact contact contact";
+  overflow-x: hidden;
+}
+
+nav {
+  background: #1C2BFC;
+  height: 10vh;
+  grid-area: nav;
+}
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 100px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  height: 100%;
+}
+nav .container img {
+  border-radius: 50%;
+  width: 55px;
+  cursor: pointer;
+}
+nav .container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  list-style: none;
+}
+nav .container ul li a {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+nav .container ul li a div {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 50;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+nav .container ul li a:hover div {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  background-color: #fff;
+  grid-area: header;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 100px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+}
+header .container h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+header .container p {
+  font-size: 1.3em;
+  margin: 0;
+}
+header .container figure {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-style: italic;
+  margin: 0;
+}
+header .container figure img {
+  width: 60%;
+  border-radius: 8px;
+  margin: 40px 0 15px 0;
+  transition: 0.5s;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.3);
+}
+header .container figure img:hover {
+  transform: scale(1.025);
+  transition: 0.5s;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: #1C2BFC;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  grid-area: skills;
+}
+.skills h1 {
+  margin: 20px 0 0 0;
+}
+.skills .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+}
+.skills .container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.skills .container div:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.skills .container div img {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.projects {
+  grid-area: projects;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+.projects h1 {
+  margin: 20px 0 0 0;
+}
+.projects .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.projects .container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.projects .container div:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.projects .container div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #000;
+  height: 100%;
+  width: 100%;
+}
+.projects .container div a img {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1C2BFC;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  grid-area: contact;
+}
+footer h1 {
+  margin: 20px 0 0 0;
+}
+footer .container {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+footer .container a {
+  text-align: center;
+}
+footer .container a:nth-child(2) {
+  margin: 0 300px;
+}
+footer .container a img {
+  width: 3%;
+  filter: invert(98%) sepia(55%) saturate(207%) hue-rotate(200deg) brightness(118%) contrast(100%);
+}
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p img {
+  margin-left: 5px;
+  width: 9%;
+  filter: invert(98%) sepia(55%) saturate(207%) hue-rotate(200deg) brightness(118%) contrast(100%);
+}
+
+@media (max-width: 992px) {
+  body {
+    grid-template-areas: "nav nav" "header header" "skills skills" "projects projects" "contact contact";
+  }
+
+  nav {
+    height: auto;
+  }
+  nav .container {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .container img {
+    padding: 15px;
+  }
+  nav .container ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  nav .container ul li {
+    width: 100vw;
+    transition: 0.5s;
+  }
+  nav .container ul li:hover {
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  nav .container ul li a {
+    width: 100%;
+    padding: 15px 0;
+  }
+  nav .container ul li a:hover {
+    color: #000;
+  }
+  nav .container ul li a:hover div {
+    width: 0;
+  }
+
+  header {
+    height: auto;
+  }
+  header .container {
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+  header .container h1 {
+    font-size: 1.5em;
+  }
+  header .container p {
+    font-size: 1em;
+  }
+  header .container figure img {
+    width: 100%;
+    border-radius: 16px;
+  }
+  header .container figure img:hover {
+    transform: none;
+  }
+
+  .skills {
+    height: auto;
+  }
+  .skills .container {
+    flex-direction: column;
+  }
+  .skills .container div {
+    width: 85%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .skills .container div:hover {
+    transform: none;
+  }
+  .skills .container div:last-child {
+    margin-bottom: 20px;
+  }
+  .skills .container div img {
+    width: 15%;
+  }
+
+  .projects {
+    height: auto;
+  }
+  .projects .container {
+    flex-direction: column;
+  }
+  .projects .container div {
+    width: 85%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .projects .container div:hover {
+    transform: none;
+  }
+  .projects .container div a img {
+    width: 15%;
+  }
+
+  footer {
+    height: auto;
+  }
+  footer .container a {
+    width: 100%;
+  }
+  footer .container a:nth-child(2) {
+    margin: 0 75px;
+  }
+  footer .container a img {
+    width: 10%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
